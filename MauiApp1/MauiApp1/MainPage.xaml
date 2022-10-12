@@ -1,0 +1,62 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:controls="clr-namespace:MauiApp1.Controls"
+             x:Class="MauiApp1.MainPage" Padding="10">
+    <VerticalStackLayout BindableLayout.ItemsSource="{Binding Cars}">
+        <BindableLayout.ItemTemplate>
+            <DataTemplate>
+                <ContentView Padding="10">
+                    <Label Text="Binding"/>
+                </ContentView>
+            </DataTemplate>
+        </BindableLayout.ItemTemplate>
+    </VerticalStackLayout>
+    <!--<FlexLayout Wrap="Wrap" JustifyContent="SpaceBetween">
+        <BoxView WidthRequest="100" HeightRequest="100" Color="Red"></BoxView>
+        <BoxView WidthRequest="100" HeightRequest="100" Color="Yellow"></BoxView>
+        <BoxView WidthRequest="100" HeightRequest="100" Color="Green"></BoxView>
+    </FlexLayout>-->
+    <!--<AbsoluteLayout>
+        <BoxView AbsoluteLayout.LayoutBounds="0,0,100,100" Color="Red"/>
+        <BoxView AbsoluteLayout.LayoutBounds="50,100,30,80" Color="Red"/>
+        <BoxView AbsoluteLayout.LayoutBounds="0,0,800,80" Color="Green"/>
+        <BoxView AbsoluteLayout.LayoutBounds="0,0,800,80" Color="Green"/>
+    </AbsoluteLayout>-->
+    <!--<ScrollView>
+        <VerticalStackLayout
+            Spacing="25"
+            Padding="30,0"
+            VerticalOptions="Center">
+            <controls:CardControl Title="Hello MAUI from aaaa">
+                <VerticalStackLayout>
+                    <Label Text="Label 1"></Label>
+                    <Label Text="Label 2"></Label>
+                    <Label Text="Label 2"></Label>
+                </VerticalStackLayout>
+            </controls:CardControl>
+            <controls:CardControl Title="Hello MAUI from">
+                <HorizontalStackLayout>
+                    <Label Text="Label 1" FontSize="Large"></Label>
+                    <Label Text="Label 2"></Label>
+                    <Label Text="Label 2"></Label>
+                </HorizontalStackLayout>
+            </controls:CardControl>
+            --><!--<HorizontalStackLayout Spacing="10">
+                <Button Text="PASS" BackgroundColor="Green"/>
+                <Button Text="FAIL" BackgroundColor="Red"/>
+            </HorizontalStackLayout>--><!--
+
+            <Grid ColumnSpacing="10">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="*" />
+                </Grid.ColumnDefinitions>
+                <Button Text="PASS" FontSize="Large" Grid.Column="0" BackgroundColor="Green"/>
+                <Button Text="FAIL" FontSize="Large" Grid.Column="1" BackgroundColor="Red"/>
+            </Grid>
+        </VerticalStackLayout>
+       
+    </ScrollView>-->
+    
+</ContentPage>
